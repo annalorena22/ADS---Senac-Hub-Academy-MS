@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Preencha os campos abaixo:</h1>
+    <!-- action define o banco de dados a ser utilizado-->
+    <!-- for relaciona com id -->
+    <!-- name relaciona com banco de dados-->
+    <!-- required torna o campo obrigatório-->
+    <!-- maxlength define a quantidade de caracteres-->
+    <!-- size define o tamanho do campo de texto-->
+    <!-- type define o tipo de dado-->
+    <form action="/page.php">
+        <!--fieldset DADOS PESSOAIS-->
+        <fieldset><legend>Dados Pessoais</legend>
+        <label for="fname">Primeiro Nome:</label>
+        <br>
+        <!--TYPE TEXTO-->
+        <input
+            type="text"
+            id="fname"
+            name="fname" 
+            placeholder="Jane"
+            maxlength="5"
+            size="20"
+            required
+        >
+        <br>
+        <br>
+        <label for="lname">Último Nome:</label>
+        <br>
+        <input 
+            type="text" 
+            id="lname" 
+            name="lname"
+            placeholder="Doe"
+            maxlength="5"
+            size="20"
+            required
+        >
+        <br>
+        <br>
+        <!--TYPE DATA-->
+        <label for="date">Data de Nascimento:</label>
+        <input type="date" id="date" size="20" maxlength="10" placeholder="00-00-0000">
+        <br>
+        <br>
+        <!--TYPE HORA-->
+        <label for="hora">Horário de Nascimento:</label>
+        <input type="time" id="hora" name="hora">
+        <br>
+        <br>
+        <!--TYPE DATA E HORA JUNTOS-->
+        <label for="datahora">Data e Hora:</label>
+        <input type="datetime-local" id="datahora" name="datahora">
+        <br>
+        <br>
+        <!--TYPE TELEFONE-->
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(00)00000-0000" pattern="[0-9]{2}[0-9]{5}-[0-9]{4}" required>
+        </fieldset>
+        <br>
+        <!--fieldset CONTATO-->
+        <fieldset><legend>Contato</legend>
+        <br>
+        <!--TYPE EMAIL-->
+        <label for="email">Email</label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email"
+            placeholder="janedoe@mail.com"
+            maxlength="5"
+            size="20"
+            required
+        >
+        <br>
+        <br>
+        <!--TYPE SENHA-->
+        <label for="senha">Senha</label>
+        <input 
+            type="password" 
+            name="Senha"
+            id="senha" 
+            size="20"
+            maxlength="10"
+            placeholder="********"
+        >
+        </fieldset>
+        <br>
+        <!--fieldset LINGUAGEM FAVORITA-->
+        <fieldset><legend>Linguagem Favorita</legend>
+            <!--TYPE RADIO (seleciona apenas 1 opção)-->
+            <p>Qual a sua linguagem favorita?</p>
+            <input type="radio" id="html" name="fav_language" value="HTML" checked>
+            <label for="html">HTML</label>
+            <br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label>
+            <br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </fieldset>
+        <br>
+        <!--fieldset LINGUAGEM FAVORITA-->
+        <fieldset><legend>Linguagem Favorita</legend>
+            <p>Qual a sua linguagem favorita?</p>
+            <!--TYPE CHECKBOX (seleciona mais de 1 opção)-->
+            <input type="checkbox" id="html" name="fav_language" value="HTML" checked>
+            <label for="html">HTML</label>
+            <br>
+            <input type="checkbox" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label>
+            <br>
+            <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </fieldset>
+        <br>
+        <!--fieldset COR FAVORITA-->
+        <fieldset><legend>Cor Favorita</legend>
+            <!--TYPE COLOR-->
+            <label for="cor">Escolha uma cor:</label>
+            <input type="color" id="cor" name="cor">
+        </fieldset>
+        <br>
+        <!--fieldset ENVIAR ARQUIVO-->
+        <fieldset><legend>Envie um arquivo</legend>
+            <br>
+            <!--TYPE FILE-->
+            <label for="arquivo">Carregar arquivo:</label>
+            <input type="file" id="arquivo" name="arquivo">
+        </fieldset>
+        <br>
+        <fieldset><legend>Escolha o seu país:</legend>
+            <br>
+            <!--FORMATO SELECT PRA DROPDOWN-->
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+                <option value="brasil">Brasil</option>
+                <option value="eua">Estados Unidos</option>
+                <option value="japao">Japão</option>
+            </select>
+        </fieldset>
+        <br>
+        <!--fieldset PESQUISA-->
+        <fieldset><legend>Pesquisar</legend>
+            <br>
+            <!--TYPE SEARCH-->
+            <label for="pesquisa">O que você está procurando?</label>
+            <input type="search" id="pesquisa" name="pesquisa" placeholder="Digite sua busca..." required>
+            <br>
+            <br>
+            <button type="submit">Pesquisar</button>
+        </fieldset>
+        <br>
+        <!--fieldset DIGITAR UM TEXTO-->
+        <fieldset><legend>Digitar um texto</legend>
+            <br>
+            <!--TEXTAREA PARA TEXTO-->
+            <label for="story">Conte uma história:</label>
+            <br>
+            <br>
+            <textarea id="story" name="story" rows="5" cols="33">Era uma vez...</textarea>
+        </fieldset>
+        <br>
+        <fieldset><legend>Audio</legend>
+            <!--TYPE AUDIO-->
+            <audio autoplay controls muted loop>
+                <source src = "audio.ogg" type="audio/ogg">
+                <source src = "audio.mp3" type="audio/mp3">
+            </audio>
+        </fieldset>
+        <br>
+        <fieldset><legend>Vídeo</legend>
+            <!--TYPE VÍDEO-->
+            <video width="320" height="240">
+                <source src = "movie.mp4" type="video/mp4">
+                <source src = "movie.ogg" type="video/ogg">
+            </video>
+        </fieldset>
+        <br>
+        <iframe 
+            width="1280" 
+            height="533"
+            src="https://www.youtube.com/embed/moSFlvxnbgk" 
+            title="Disney&#39;s Frozen &quot;Let It Go&quot; Sequence Performed by Idina Menzel" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        >
+        </iframe>
+        <br>
+        <br>
+        <!--código de exemplo EMOJI-->
+        &#x1F336;
+        <br>
+        <!--&#169 decimal-->
+
+        <!--PICTURE - Define condições de layout para responsividade-->
+        <picture>
+            <source media="(max-width:320px)" srcset="./img/mona-320.png"/>
+            <source media="(max-width:768px)" srcset="./img/mona-768.png"/>
+            <source media="(max-width:1200px)" srcset="./img/mona-1200.png"/>
+            <img src=""/>
+        </picture>
+
+        <!--SEMANTICA-->
+        <!-- <nav> (navegação) menu -->
+        <body><header>cabeçalho</header></body>
+        <nav>MENUS</nav>
+        <main>Estrutura principal... article, section, div</main>
+        <section>Trecho do site dentro da main</section>
+        <article>Trecho retirado de outro lugar, pode colocar e retirar que nao altera o site, (pode ser retirado de outro site)</article>
+        <div>Separa o código em trechos para estilização. Utilizado tbm quando nao é nenhum outro elemento de semantica(article, section, aside)</div>
+        <span style = "color: blue">Estiliza um trecho/palavra</span>
+        <aside>Conteúdo nas laterais do site</aside>
+        <footer>Rodapé</footer>
+        <!-- /SEMANTICA-->        
+        <br>
+        <br>
+        <!--CSS - inline-->
+        <h1 style="color: blue;">cabeçalho</h1>
+        <!--CSS interno-->
+        <!-- <head>
+            <style>
+                body {
+                    background-color: powderblue;
+                }
+                h1 { 
+                    color: blue
+                }
+                p {color: red;}
+            </style>
+        </head> -->
+
+        <!-- CSS externo-->
+        <link rel="stylesheet" href="./style/aula1_css.css">
+        <p id="paragrafo1">lorem</p>
+        <p id="paragrafo2">Lorem, ipsum.</p>
+        
+        <!-- <input type="submit" value="enviar"> -->
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar Formulário</button>
+    </form>
+</body>
+</html>
