@@ -18,49 +18,49 @@
 
 from Animal import *
 
-cachorro = Animal("Cachorro", "Canis lupus familiaris")
+cachorro = Animal("Cachorro", "Canis lupus familiaris", "Casa")
 cachorro.seMovimentar()
 
-gato = Vertebrados("Gato", "Felis silvestris catus")
-gato.mostrarColuna
+gato = Vertebrados("Gato", "Felis silvestris catus", "Caixa de papelão")
+gato.mostrarColuna()
 
-papagaio = Aves("Papagaio", "Amazona")
+papagaio = Aves("Papagaio", "Amazona", "Natureza")
 papagaio.seMovimentar()
 papagaio.mostrarColuna()
 papagaio.voar()
 
-cobra = Repteis("Cobra", "Serpentes")
+cobra = Repteis("Cobra", "Serpentes", "Terra")
 cobra.seMovimentar()
 cobra.mostrarColuna()
 cobra.botarOvo()
 
-sapo = Anfibios("Sapo", "Anura")
+sapo = Anfibios("Sapo", "Anura", "Lagoa")
 sapo.seMovimentar()
 sapo.mostrarColuna()
 sapo.pular()
 
-tubarao = Peixes("Tubarão", "Selachimorpha")
+tubarao = Peixes("Tubarão", "Selachimorpha", "Oceano")
 tubarao.seMovimentar()
 tubarao.mostrarColuna()
 tubarao.nadar()
 
-leao = Mamiferos("Leão", "Panthera leo")
+leao = Mamiferos("Leão", "Panthera leo", "Selva")
 leao.seMovimentar()
 leao.mostrarColuna()
 leao.amamentar()
 
-ornitorrinco = Ornitorrinco("Ornitorrinco", "Ornithorhynchus anatinus")
+ornitorrinco = Ornitorrinco("Ornitorrinco", "Ornithorhynchus anatinus", "Austrália")
 ornitorrinco.seMovimentar()
 ornitorrinco.mostrarColuna()
 ornitorrinco.amamentar()
 ornitorrinco.botarOvo()
 
-morcego = Morcego("Morcego", "Chiroptera")
+morcego = Morcego("Morcego", "Chiroptera", "Lugar Escuro")
 morcego.seMovimentar()
 morcego.mostrarColuna()
 morcego.morderPescoco()
 
-baleia = Baleia("Baleia", "Cetacea")
+baleia = Baleia("Baleia", "Cetacea", "Oceano")
 baleia.mostrarColuna()
 baleia.seMovimentar()
 baleia.nadar()
