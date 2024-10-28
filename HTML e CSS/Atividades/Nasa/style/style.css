@@ -1,0 +1,43 @@
+*{
+    margin:0px;
+    padding: 0px;
+    border: 0px;
+}
+
+header{
+    background-color: black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.274);
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.grid-nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: black;
+    align-items: center;
+    width: 100%;    
+    padding-top:25px;
+    padding-bottom: 25px;
+}
+
+.grid-item {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+#logo{ 
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    background-color: black;
+}
