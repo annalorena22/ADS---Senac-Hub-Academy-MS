@@ -1,0 +1,19 @@
+footer{
+   width: 100%;
+   text-align: center;
+   padding-top: 100px;
+}
+
+.font-style-footer{
+    color: white;
+    font-weight: lighter;
+}
+
+h2{
+    font-size: 11px;
+}
+
+h3{
+    font-size: 10px;
+    font-style: italic;
+}
