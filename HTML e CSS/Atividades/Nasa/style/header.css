@@ -1,7 +1,11 @@
 header{
+    position: fixed;
+    width: 100%;
+    top: 0;
     background-color: rgb(126, 126, 126);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    z-index: 1000;
 }
 
 #logo{ 
@@ -30,12 +34,12 @@ header{
 
 .grid-item {
     text-align: center;
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bolder;
     font-size: 14px;
 }
 
 .grid-item:hover{
-    color: white;
+    color: black;
 }
