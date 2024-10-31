@@ -1,7 +1,20 @@
-from Livro import Livro
+from Livro import Livros
+from Usuario import Usuario
 
 class Biblioteca:
-   acervo = []
+    Acervo:list[Livros] = []
 
-   @staticmethod
-   def emprestar(livro:)
+
+    @staticmethod
+    def emprestar(usuario: Usuario, livros: list[Livros] ):
+
+        for item in livros:
+            if len(usuario.lista_livros) == usuario.MAX_EMPRESTIMO:
+                return
+            usuario.pegar_emprestado(item)
+            item.emprestar_livro(usuario)
+
+    # @staticmethod
+    # def devolver(livro: Livros, usuario: Usuario):
+    #     livro.devolver_livro()
+    #     usuario.
