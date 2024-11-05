@@ -22,3 +22,7 @@ class Livros():
         
         self.usuario = None
         self.status = 'Disponivel'
+
+class ControllerLivro():
+    def __init__(self):
+        
