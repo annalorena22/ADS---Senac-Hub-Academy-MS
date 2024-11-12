@@ -1,5 +1,5 @@
-from livros import Livros
-from usuario import Usuario
+from models.livros import Livros
+from models.usuario import Usuario
 
 class Biblioteca:
     Acervo:list[Livros] = []

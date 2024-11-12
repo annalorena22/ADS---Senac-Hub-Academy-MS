@@ -1,0 +1,2 @@
+Model: Cria as classes com seus atributos e as funções CRUD.
+Controller: Controla os models e executa os métodos.

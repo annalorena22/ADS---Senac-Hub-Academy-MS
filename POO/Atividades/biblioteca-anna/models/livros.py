@@ -9,7 +9,15 @@ class Livros():
         self.usuario = None
 
     def create(self):
-        return 'insert into livro(titulo, autor, genero) values()'
+        return f'insert into livro(titulo, autor, genero, status, codigo) values("{self.titulo}", "{self.autor}", "{self.genero}", "{self.status}", {self.cod_livro});'
+
+    def read(self):
+        return f'select * from livro where codigo = {self.cod_livro};'
+    
+    
+
+
+
 
 
     
