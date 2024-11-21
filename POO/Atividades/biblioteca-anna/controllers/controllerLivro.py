@@ -26,7 +26,6 @@ class ControllerLivro:
     def excluirLivro(self):
         pass
     
-    # 30min para terminar!!!!
 
 
 controladora = ControllerLivro()
