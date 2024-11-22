@@ -1,0 +1,6 @@
+let produto = window.prompt("Digite o nome do produto:")
+let quant = window.prompt("Digite a quantidade:")
+let preco = window.prompt("Digite o preço:")
+let desc = window.prompt("Digite o percentual de desconto a ser aplicado:")
+let valorTotal = (quant * preco) - ((desc / 100) * (quant * preco))
+window.alert("O valor da venda é: " + valorTotal)
