@@ -1,12 +1,12 @@
-from models.livros import Livros
-from models.usuario import Usuario
+from controllers import controllerLivro
+from controllers import controllerUsuario
 
 class Biblioteca:
     Acervo:list[Livros] = []
 
 
     @staticmethod
-    def emprestar(usuario: Usuario, livros: list[Livros] ):
+    def emprestar(usuario: Usuario, livros: list[Livro] ):
 
         for item in livros:
             if len(usuario.lista_livros) == usuario.MAX_EMPRESTIMO:
@@ -19,6 +19,6 @@ class Biblioteca:
     #     livro.devolver_livro()
     #     usuario.
 
-
-    #Services
-    
+    @staticmethod
+    def cadastrarLivro(informacoesLivro):
+        controllerLivro.cadastrarLivro()

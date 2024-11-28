@@ -1,7 +1,7 @@
 Model: Cria as classes com seus atributos e as funções CRUD. Representação de tabela do banco de dados.
+
 View: Camada de visualização e interação do usuário.
 Controller: Controla os models e executa os métodos.
-
 
 Model:
 Cria as entidades e suas propriedades.

@@ -1,4 +1,4 @@
-class Livros():
+class Livro():
     def __init__(self, titulo, autor, genero, cod_livro):
         self.titulo = titulo
         self.autor = autor

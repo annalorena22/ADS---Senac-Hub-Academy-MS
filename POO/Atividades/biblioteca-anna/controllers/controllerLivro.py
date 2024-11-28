@@ -1,14 +1,14 @@
-from models.livros import Livros
+from models.livros import Livro
 from config.database import Database
 
 class ControllerLivro:
     def __init__(self):
         self.bd = Database("localhost","root","","biblioteca")
 
-    def cadastrarLivro(self):
+    def cadastrarLivro(self, informacoesLivro):
         self.bd.conectar()
 
-        self.livro = Livros("Dom Casmuro", "Machado de Assis", "Suspense", 123)
+        self.livro = Livro(informacoesLivro['titulo'], informacoesLivro['autor'], informacoesLivro['genero'], informacoesLivro['codigo'])
         self.bd.cursor.execute(self.livro.create())
         self.bd.conexao.commit()
         self.bd.desconectar()
