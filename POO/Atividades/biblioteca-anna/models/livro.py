@@ -1,13 +1,12 @@
 #MODEL Livro PRONTA(?)
 
 class Livro():
-    def __init__(self, titulo, autor, genero, cod_livro):
+    def __init__(self, titulo, autor, genero, cod_livro, status):
         self.titulo = titulo
         self.autor = autor
         self.genero = genero
         self.cod_livro = cod_livro
-
-        self.status = "Disponivel"
+        self.status = status
         self.usuario = None
 
     def create(self):
@@ -20,6 +19,9 @@ class Livro():
     
     def update(self):
         return f'update livros set titulo = {self.titulo}, autor = {self.autor}, genero = {self.genero} where codigo = {self.cod_livro};'
+    
+    def update_status(self):
+        return f'update livros set status = {self.status} where codigo = {self.cod_livro};'
     
     
     @staticmethod

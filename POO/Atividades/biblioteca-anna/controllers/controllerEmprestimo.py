@@ -29,14 +29,14 @@ class controllerEmprestimo:
 
         #COMO FAZ?
 
-        # queryStatus= Emprestimo.update(status)
-        # self.bd.cursor.execute(queryStatus)
-        
-        # queryEmprestar = Emprestimo.create()
-        # self.bd.cursor.execute(queryEmprestar)
-        
+        queryEmprestar = Emprestimo.create()
+        self.bd.cursor.execute(queryEmprestar)
 
-        # self.bd.conexao.commit()
-        # print("Empréstimo realizado com sucesso.")
+        
+        queryStatus= Livro.update_status(status)
+        self.bd.cursor.execute(queryStatus)
 
-        # self.bd.desconectar()
+        self.bd.conexao.commit()
+        print("Empréstimo realizado com sucesso.")
+
+        self.bd.desconectar()
