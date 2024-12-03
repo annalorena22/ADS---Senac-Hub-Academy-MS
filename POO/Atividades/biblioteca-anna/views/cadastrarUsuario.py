@@ -1,7 +1,9 @@
+#VIEW Cadastrar Usuário PRONTA(?)
+
 import sys
 from PyQt6 import uic 
 from PyQt6.QtWidgets import QApplication, QMainWindow
-ui_file = "POO/Atividades/biblioteca-anna/views/cadastrarUsuario.ui"
+ui_file = "POO/Atividades/biblioteca-anna/ui/cadastrarUsuario.ui"
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -12,21 +14,24 @@ class MainWindow(QMainWindow):
     def cadastrarUsuario(self):
         informacoesUsuario = {
             "nomeUsuario" : self.inputNomeDeUsuario.text(),
-            "telefoneUsuario" : self.inputTelefone.text(),
-            "CPF" : self.inputCPF.text(),
-            
+            "cpf" : self.inputCpf.text(),
+            "telefoneUsuario" : self.inputTelefone.text()
         }
         print(informacoesUsuario)
-        teste = ''
-        print(teste != '')
 
         aviso = self.label_aviso
-        if informacoesUsuario["nomeUsuario"] == "" or informacoesUsuario["telefoneUsuario"] == "" or informacoesUsuario["CPF"] == "":
+        if informacoesUsuario["nomeUsuario"] == "" or informacoesUsuario["telefoneUsuario"] == "" or informacoesUsuario["cpf"] == "":
             aviso.setStyleSheet("background-color: white; color:red")
             aviso.setText("Você deve preencher todos os campos para realizar o cadastro.")
+        elif not informacoesUsuario["cpf"].isnumeric():
+            aviso.setStyleSheet("background-color: white; color:red")
+            aviso.setText("O CPF deve conter apenas números.")
+        elif not informacoesUsuario["telefoneUsuario"].isnumeric():
+            aviso.setStyleSheet("background-color: white; color:red")
+            aviso.setText("O Telefone deve conter apenas números.")
         else:
             aviso.setStyleSheet("background-color: white; color: green")
-            aviso.setText(" Cadastro realizado com sucesso!")
+            aviso.setText("Cadastro de usuário realizado com sucesso!")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

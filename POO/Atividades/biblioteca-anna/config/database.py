@@ -19,4 +19,3 @@ class Database:
 
     def desconectar(self):
         self.conexao.close()
-        

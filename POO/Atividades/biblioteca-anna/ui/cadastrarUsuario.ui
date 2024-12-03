@@ -78,14 +78,93 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="botaoLogin">
+   <widget class="QLabel" name="labelTelefone">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>370</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Telefone:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tituloBibliotecaSenac">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>60</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>HoloLens MDL2 Assets</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="text">
+     <string>Biblioteca Senac</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inputTelefone">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>390</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCPF">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>300</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>CPF:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inputNomeDeUsuario">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>250</y>
+      <width>641</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="botaoCadastrarUsuario">
     <property name="enabled">
      <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>550</y>
+      <x>330</x>
+      <y>600</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -193,58 +272,25 @@
      <string notr="true">background-color:rgb(73, 191, 81)</string>
     </property>
     <property name="text">
-     <string>Entrar</string>
+     <string>Cadastrar</string>
     </property>
    </widget>
-   <widget class="QLabel" name="tituloBibliotecaSenac">
+   <widget class="QLineEdit" name="inputCpf">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>50</y>
-      <width>231</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>HoloLens MDL2 Assets</family>
-      <pointsize>20</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-      <underline>false</underline>
-      <strikeout>false</strikeout>
-     </font>
-    </property>
-    <property name="text">
-     <string>Biblioteca Senac</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="inputLogin">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>250</y>
-      <width>181</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="inputSenha">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
+      <x>100</x>
       <y>320</y>
       <width>181</width>
       <height>31</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="labelSenha">
+   <widget class="QLabel" name="labelNomeDeUsuario">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>320</y>
-      <width>51</width>
+      <x>100</x>
+      <y>230</y>
+      <width>201</width>
       <height>21</height>
      </rect>
     </property>
@@ -255,39 +301,141 @@
      </font>
     </property>
     <property name="text">
-     <string>Senha:</string>
+     <string>Nome Completo:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="labelLogin">
+   <widget class="QLabel" name="tituloCadastrarUsuario">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>250</y>
-      <width>51</width>
+      <x>100</x>
+      <y>170</y>
+      <width>151</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>HoloLens MDL2 Assets</family>
-      <pointsize>12</pointsize>
+      <pointsize>14</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Login:</string>
+     <string>Cadastrar Usuário:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_aviso">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>490</y>
-      <width>441</width>
+      <x>150</x>
+      <y>500</y>
+      <width>551</width>
       <height>31</height>
      </rect>
     </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: red;</string>
+    </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>

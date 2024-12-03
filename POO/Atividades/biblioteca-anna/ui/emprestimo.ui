@@ -78,93 +78,43 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="labelTelefone">
+   <widget class="QLineEdit" name="inputCodigoDoLivro">
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>370</y>
-      <width>71</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Telefone:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="tituloBibliotecaSenac">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>60</y>
-      <width>231</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>HoloLens MDL2 Assets</family>
-      <pointsize>20</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-      <underline>false</underline>
-      <strikeout>false</strikeout>
-     </font>
-    </property>
-    <property name="text">
-     <string>Biblioteca Senac</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="inputTelefone">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>390</y>
+      <y>240</y>
       <width>181</width>
       <height>31</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="labelCPF">
+   <widget class="QLabel" name="tituloEmprestarLivro">
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>300</y>
-      <width>31</width>
-      <height>16</height>
+      <y>160</y>
+      <width>141</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>HoloLens MDL2 Assets</family>
+      <pointsize>14</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>CPF:</string>
+     <string>Emprestar Livro:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="inputNomeDeUsuario">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>250</y>
-      <width>641</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="botaoCadastrarUsuario">
+   <widget class="QPushButton" name="botaoRealizarEmprestimo">
     <property name="enabled">
      <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>600</y>
+      <y>570</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -262,7 +212,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="cursor">
@@ -272,25 +222,15 @@
      <string notr="true">background-color:rgb(73, 191, 81)</string>
     </property>
     <property name="text">
-     <string>Cadastrar</string>
+     <string>Realizar Empréstimo</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="inputCPF">
+   <widget class="QLabel" name="labelCodigoDoLivro">
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>320</y>
-      <width>181</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labelNomeDeUsuario">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>230</y>
-      <width>201</width>
+      <y>220</y>
+      <width>121</width>
       <height>21</height>
      </rect>
     </property>
@@ -301,162 +241,106 @@
      </font>
     </property>
     <property name="text">
-     <string>Nome Completo:</string>
+     <string>Código do Livro:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="tituloCadastrarUsuario">
+   <widget class="QLineEdit" name="inputCPF">
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>170</y>
+      <y>310</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCPF">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>290</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>CPF do Usuário:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inputDataEmprestimo">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>380</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelDataEmprestimo">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>360</y>
       <width>151</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>HoloLens MDL2 Assets</family>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Cadastrar Usuário:</string>
+     <string>Data de Empréstimo:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inputDataDevolucao">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>380</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelDataDevolucao">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>360</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Data de Devolução:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_aviso">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>500</y>
+      <x>140</x>
+      <y>490</y>
       <width>551</width>
       <height>31</height>
      </rect>
-    </property>
-    <property name="palette">
-     <palette>
-      <active>
-       <colorrole role="WindowText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="Text">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="ButtonText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="PlaceholderText">
-        <brush brushstyle="NoBrush">
-         <color alpha="128">
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </active>
-      <inactive>
-       <colorrole role="WindowText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="Text">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="ButtonText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="PlaceholderText">
-        <brush brushstyle="NoBrush">
-         <color alpha="128">
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </inactive>
-      <disabled>
-       <colorrole role="WindowText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="Text">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="ButtonText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-       <colorrole role="PlaceholderText">
-        <brush brushstyle="NoBrush">
-         <color alpha="128">
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </disabled>
-     </palette>
     </property>
     <property name="font">
      <font>
       <pointsize>15</pointsize>
      </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: red;</string>
     </property>
     <property name="text">
      <string/>
@@ -465,25 +349,27 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_sucesso">
+   <widget class="QLabel" name="tituloBibliotecaSenac">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>500</y>
-      <width>291</width>
+      <x>280</x>
+      <y>50</y>
+      <width>231</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>15</pointsize>
+      <family>HoloLens MDL2 Assets</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">color: red;</string>
-    </property>
     <property name="text">
-     <string/>
+     <string>Biblioteca Senac</string>
     </property>
    </widget>
   </widget>
