@@ -1,0 +1,7 @@
+﻿Survived;Pclass;Name;Sex;Age;SibSp;Parch;Ticket;Fare;Cabin;Embarked
+1;1;Peuchen, Major. Arthur Godfrey;male;52.0;0;0;113786;30.5;C104;S
+1;2;Harris, Mr. George;male;62.0;0;0;S.W./PP 752;10.5;;S
+1;1;Frolicher-Stehli, Mr. Maxmillian;male;60.0;1;1;13567;79.2;B41;C
+1;1;Barkworth, Mr. Algernon Henry Wilson;male;80.0;0;0;27042;30.0;A23;S
+1;1;Simonius-Blumer, Col. Oberst Alfons;male;56.0;0;0;13213;35.5;A26;C
+1;1;Daly, Mr. Peter Denis ;male;51.0;0;0;113055;26.55;E17;S

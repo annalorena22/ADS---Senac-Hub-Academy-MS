@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Forms - 1</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <label for="fname">Primeiro Nome:</label>
+    <br>
+    <input
+            type="text"
+            id="fname"
+            name="fname" 
+            placeholder="Jane"
+            maxlength="5"
+            size="20"
+            required
+        >
+    <br><br>
+    <label for="mname">Nome do Meio:</label>
+    <br>
+    <input
+            type="text"
+            id="mname"
+            name="mname" 
+            placeholder="Middle"
+            maxlength="5"
+            size="20"
+            required
+        >
+    <br><br>
+    <label for="lname">Último Nome:</label>
+    <br>
+    <input
+            type="text"
+            id="lname"
+            name="lname" 
+            placeholder="Doe"
+            maxlength="5"
+            size="20"
+            required
+        >
+    <br><br>
+    <fieldset><legend>Qual é sua linguagem favorita?</legend>
+        <input type="radio" id="html" name="fav_language" value="HTML" checked>
+        <label for="html">HTML</label>
+        <br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label>
+        <br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </fieldset>
+    <label for="email">Email:</label>
+    <br>
+        <input 
+            type="email" 
+            id="email" 
+            name="email"
+            maxlength="5"
+            size="20"
+            required
+        >
+        <br>
+        <br>
+        <label for="senha">Senha:</label>
+        <br>
+        <input 
+            type="password" 
+            name="Senha"
+            id="senha" 
+            size="20"
+            maxlength="10"
+        >
+        <br>
+        <br>
+        <label for="telefone">Telefone:</label>
+        <br>
+        <input type="tel" id="telefone" name="telefone" placeholder="(XX)XXXXX-XXXX" pattern="[0-9]{2}[0-9]{5}-[0-9]{4}" required>
+        <br>
+        <br>
+        <label for="date">Data de Nascimento:</label>
+        <br>
+        <input type="date" id="date" size="20" maxlength="10" placeholder="00-00-0000">
+        <br>
+        <br>
+</body>
+</html>

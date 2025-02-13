@@ -1,0 +1,3 @@
+# from Ia import *
+
+# Pergunta()
