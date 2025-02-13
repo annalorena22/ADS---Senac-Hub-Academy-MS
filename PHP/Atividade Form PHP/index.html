@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms PHP</title>
+</head>
+<body>
+    <h2>Preencha o Formulário:</h2>
+    <form method="post" action="form.php">
+        <!-- FIELDSET DADOS PESSOAIS -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome Completo:</label>
+            <input
+                type="text"
+                id="nome"
+                name="nome" 
+                placeholder="Jane Doe"
+                maxlength="20"
+                size="50"
+                required
+            >
+            <br><br>
+            <label for="idade">Idade:</label>
+            <input
+                type="text"
+                id="idade"
+                name="idade" 
+                placeholder="0"
+                maxlength="3"
+                size="2"
+                required
+            >
+            <br><br>
+            <label for="rg">RG:</label>
+            <input
+                type="text"
+                id="rg"
+                name="rg" 
+                placeholder="0"
+                maxlength="10"
+                size="10"
+                required
+            >
+            <br><br>
+            <label for="cpf">CPF:</label>
+            <input
+                type="text"
+                id="rg"
+                name="rg" 
+                placeholder="0"
+                maxlength="10"
+                size="10"
+                required
+            >
+            <br><br>
+            <label for="date">Data de Nascimento:</label>
+        <input type="date" id="date" size="20" maxlength="10" placeholder="00-00-0000">
+        <br>
+        <br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(00)00000-0000" pattern="[0-9]{2}[0-9]{5}-[0-9]{4}" required>
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email"
+            placeholder="janedoe@mail.com"
+            maxlength="20"
+            size="20"
+            required
+        >
+        <br><br>
+        <label for="arquivo">Envie sua foto de perfil:</label>
+            <input type="file" id="arquivo" name="arquivo">
+        </fieldset>
+        <br><br>
+        <!-- FIELDSET ENDEREÇO -->
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="rua">Rua:</label>
+            <input
+                type="text"
+                id="rua"
+                name="rua" 
+                placeholder="Rua/Avenida/Travessa"
+                maxlength="30"
+                size="50"
+                required
+            >
+            <label for="numero_casa">Nº:</label>
+            <input
+                type="text"
+                id="numero_casa"
+                name="numero_casa" 
+                placeholder="0"
+                maxlength="6"
+                size="2"
+                required
+            >
+            <br>
+            <br>
+            <label for="bairro">Bairro:</label>
+            <input
+                type="text"
+                id="bairro"
+                name="bairro" 
+                maxlength="30"
+                size="40"
+                required
+            >
+            <br>
+            <br>
+            <label for="cidade">Cidade:</label>
+            <input
+                type="text"
+                id="cidade"
+                name="cidade" 
+                maxlength="30"
+                size="20"
+                required
+            >
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado">
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>            
+        </fieldset>
+        <br><br>
+        <!--ÉPOCA DO ANO FAVORITA-->
+        <fieldset>
+            <legend>Época do Ano Favorita:</legend>
+            <label>Qual a sua época do ano favorita?</label>
+            <br><br>
+            <input type="checkbox" id="primavera" name="epoca[]" value="Primavera" checked>
+            <label for="primavera">Primavera</label>
+            <br>
+            <input type="checkbox" id="verao" name="epoca[]" value="Verão">
+            <label for="verao">Verão</label>
+            <br>
+            <input type="checkbox" id="outono" name="epoca[]" value="Outono">
+            <label for="outono">Outono</label>
+            <br>
+            <input type="checkbox" id="inverno" name="epoca[]" value="Inverno">
+            <label for="inverno">Inverno</label>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Cor Favorita</legend>
+            <label for="cor">Selecione a sua Cor Favorita:</label>
+            <br>
+            <input type="color" id="cor" name="cor">
+        </fieldset>
+        <br><br>
+        <button type="submit">Cadastrar</button>
+        <button type="res">Limpar Formulário</button>
+    </form>
+</body>
+</html>

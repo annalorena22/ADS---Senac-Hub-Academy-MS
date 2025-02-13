@@ -1,0 +1,16 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(home.css);
+
+*{
+    margin:0px;
+    padding: 0px;
+    border: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100%;
+    margin-top: 300px;
+}
