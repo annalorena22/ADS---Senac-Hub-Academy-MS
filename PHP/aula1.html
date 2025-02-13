@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+</head>
+<body>
+   
+    <!--formulario get-->
+    <form method="get" action="formulario.php">
+        <fieldset id="pessoal">
+            <legend>Dados Pessoais</legend>
+                <p>
+                    Nome <input type="text" name = "nome" id="nome" size="20" maxlength="20" placeholder="Ex.: Gun">
+                </p>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+    <br><br><br><br><br>
+ 
+    <!--formulario post/radio-->
+    <form method="post" action="formulario_radio.php">
+        <B>Qual seu sistema operacional?</B><br>
+        <input type="radio" name=sistema value="Windows98"> Win 98
+        <input type="radio" name=sistema value="Windows XP"> Win XP
+        <input type="radio" name=sistema value="Outros" checked> Outros
+        <input type="submit">
+    </form>
+ 
+    <!--formulario post/check-->
+    <form method="post" action="formulario_check.php"><b>Qual a melhor opção?</b><br>
+        <input type="checkbox" id="opção" name="option[]" value="opção boa" checked>
+            <label for="opção">Opção Boa</label>
+        <input type="checkbox"  id="opção2" name="option[]" value="opção ruim">
+            <label for="opção2">Opção Ruim</label>
+        <input type="submit">
+    </form>
+</body>
+</html>
